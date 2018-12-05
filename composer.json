@@ -22,9 +22,6 @@
         "illuminate/broadcasting": "^5.4",
         "wisembly/elephant.io": "^3.3"
     },
-    "require-dev": {
-        "illuminate/support": "~5"
-    },
     "autoload": {
         "psr-4": {
             "ArnisLielturks\\SocketIOBroadcaster\\": "src/"

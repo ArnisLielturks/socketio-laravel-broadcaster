@@ -88,7 +88,7 @@ class SocketIOBroadcaster extends Broadcaster
             }
             $client->close();
         } catch(\Exception $e) {
-            Log::error($e->getMessage());
+            Log::error('SocketIOBroadcaster: ' . $e->getMessage());
         }
     }
 }
