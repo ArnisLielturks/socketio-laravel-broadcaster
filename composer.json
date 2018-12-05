@@ -1,0 +1,33 @@
+{
+    "name": "arnislielturks/socketio-laravel-broadcaster",
+    "description": "Socket.io laravel broadcaster",
+    "keywords": [
+        "laravel",
+        "socket.io",
+        "socketio-laravel-broadcaster",
+        "laravel-broadcasting"
+    ],
+    "homepage": "https://socket.io/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arnis Lielturks",
+            "email": "arnis.lielturks@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "~5",
+        "illuminate/broadcasting": "^5.4",
+        "wisembly/elephant.io": "^3.3"
+    },
+    "require-dev": {
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArnisLielturks\\SocketIOBroadcaster\\": "src/"
+        }
+    }
+}
