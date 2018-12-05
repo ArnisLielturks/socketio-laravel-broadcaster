@@ -2,8 +2,10 @@
 
 namespace ArnisLielturks\SocketIOBroadcaster;
 
+use ElephantIO\Client;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Log;
+use ElephantIO\Engine\SocketIO\Version2X;
 use Illuminate\Broadcasting\Broadcasters\Broadcaster;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
@@ -75,7 +77,7 @@ class SocketIOBroadcaster extends Broadcaster
     public function broadcast(array $channels, $event, array $payload = [])
     {
         try {
-            $url = $this->config('server');
+            $url = $this->config['server'];
             $client = new Client(new Version2X( $url, [
                 'headers' => [
                 ]
